@@ -18,10 +18,10 @@ function distance = gf_element_distance(a, b)
 ? ? a_bin = de2bi(a_num, max_bits);
 ? ? b_bin = de2bi(b_num, max_bits);
 ? ? 
-? ? % 计算异或结果（模2加等价于异或）
-? ? xor_result = mod(a_bin + b_bin, 2);
-? ? 
-? ? % 异或结果中1的个数即为汉明距离
-? ? distance = sum(xor_result);
+? % 计算异或结果（模2加等价于异或）
+ xor_result = mod(a_bin + b_bin, 2);
+  
+? % 异或结果中1的个数即为汉明距离
+? distance = sum(xor_result);
 end
 
